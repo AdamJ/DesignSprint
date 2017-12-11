@@ -14,9 +14,10 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".fixed-top">
+  <a class="fab-top page-scroll" href="#page-top"></a>
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Design Sprint</a>
+    <a class="navbar-brand page-scroll" href="#page-top">Design Sprint</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -24,9 +25,8 @@
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="#intro">Intro
-          </a>
+        <li class="hidden">
+          <a href="#page-top"></a>
         </li>
         <li class="nav-item">
           <a class="nav-link page-scroll" href="#navigation">Navigation</a>
@@ -43,40 +43,72 @@
 
   <main role="main" class="container">
 
-    <section id="intro" class="starter-template">
+    <section id="intro" class="starter-template container-fluid">
       <h1>Design Sprint</h1>
       <p class="lead">This project is for any and all Design Sprint information and documents<br>related (but not limited to) research, examples, favorite
       ideas, etc.</p>
     </section>
-    <section id="navigation">
+    <section id="navigation" class="container-fluid">
       <h2>Navigation</h2>
       <hr>
       <h3>Competitive Research</h3>
-      <ul>
+      <ul class="fa-ul">
         <li>
-          <a href="https://gitlab.com/explore">GitLab</a>
+          <span class="fa-li">
+            <i class="fas fa-angle-right"></i>
+          </span>
+          <a href="https://gitlab.com/explore">GitLab</a> <i class="fab fa-gitlab"></i>
         </li>
         <li>
-          <a href=">https://www.atlassian.com/software/jira">Jira</a>
+          <span class="fa-li">
+            <i class="fas fa-angle-right"></i>
+          </span>
+          <a href="https://www.atlassian.com/software/jira">Jira</a>
+        </li>
+        <li>
+          <span class="fa-li">
+            <i class="fas fa-angle-right"></i>
+          </span>
+          <a href="https://www.trello.com">Trello</a> <i class="fab fa-trello"></i>
         </li>
       </ul>
       <h3>Inspirational Research</h3>
-      <ul>
+      <ul class="fa-ul">
         <li>
+          <span class="fa-li">
+            <i class="fas fa-angle-right"></i>
+          </span>
           <a href="https://www.apple.com/mac/">Apple.com - Mac Store</a> <i class="fab fa-apple"></i> <span class="tag-mobile">Mobile</span> <span class="tag-desktop">Desktop</span>
         </li>
         <li>
+          <span class="fa-li">
+            <i class="fas fa-angle-right"></i>
+          </span>
           <a href="https://www.razerzone.com/gaming-laptops">Razer Store</a> <span class="tag-desktop">Desktop</span>
         </li>
         <li>
-          <a href="https://dribbble.com/shots/1804653-Handsome-Navigation-Animations">Dribbble - Handsome Navigation Animations <i class="fab fa-dribbble-square"></i></a>
+          <span class="fa-li">
+            <i class="fas fa-angle-right"></i>
+          </span>
+          <a href="https://dribbble.com/shots/1804653-Handsome-Navigation-Animations">Dribbble - Handsome Navigation Animations</a> <span style="color: pink;">
+            <i class="fab fa-dribbble fa-lg"></i>
+          </span>
         </li>
         <li>
-          <a href="https://dribbble.com/shots/591601-Leftside/attachments/46769">Dribbble - Leftside Navigation <i class="fab fa-dribbble-square"></i></a>
+          <span class="fa-li">
+            <i class="fas fa-angle-right"></i>
+          </span>
+          <a href="https://dribbble.com/shots/591601-Leftside/attachments/46769">Dribbble - Leftside Navigation</a> <span style="color: pink;"><i class="fab fa-dribbble fa-lg"></i></span>
+        </li>
+        <li>
+          <span class="fa-li">
+            <i class="fas fa-angle-right"></i>
+          </span>
+          Mega Menus
         </li>
       </ul>
     </section>
-    <section id="dashboards">
+    <section id="dashboards" class="container-fluid">
       <h2>Dashboards</h2>
       <hr>
       <h3>Competitive Research</h3>
@@ -98,7 +130,7 @@
         </li>
       </ul>
     </section>
-    <section id="colors">
+    <section id="colors" class="container-fluid">
       <h2>Colors</h2>
       <hr>
       <h3>Competitive Research</h3>
