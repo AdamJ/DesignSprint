@@ -55,3 +55,6 @@ gulp.task('serve', ['sass'], function () {
   gulp.watch('sass/*.scss', ['sass-watch']);
   gulp.watch('*.html').on('change', browserSync.reload);
 });
+
+// Run everything
+gulp.task('default', ['sass']);

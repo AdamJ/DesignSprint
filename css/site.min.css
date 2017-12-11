@@ -5,9 +5,13 @@
 body {
   padding-top: 5rem; }
 
-#navigation, #dashboards, #colors {
+#navigation, #colors {
   padding-top: 100px;
   padding-bottom: 100px; }
+
+#dashboards {
+  padding-top: 150px;
+  padding-bottom: 150px; }
 
 .starter-template {
   padding: 3rem 1.5rem;
