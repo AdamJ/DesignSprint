@@ -1,0 +1,73 @@
+body {
+  overflow-x: hidden;
+  background-color: #f7f7f7;
+}
+.launcher {
+  &-container {
+    display : grid;
+    grid-template-areas: 'nav content';
+    height: 100vh;
+    grid-template-columns: 200px 1fr;
+    // grid-gap: 10px;
+    &_nav {
+      grid-area: nav;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      background-color: #030303;
+      .vertical-bar {
+        background-color: #d7d7d7;
+        width: 25px;
+        height: 100vh;
+        margin-left: 15px;
+        &_steps {
+          color: #fff;
+          padding-left: 20px;
+          &--1 {
+            padding-left: 10px;
+          }
+          &--2 {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+    &_main {
+      grid-area: content;
+      width: 100%;
+      background-color: #d7d7d7;
+      display: flex;
+      padding-left: 15px;
+    }
+  }
+  /* Icons */
+  .step-circle {
+    border: 1px solid #303030;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d7d7d7;
+    color: #d7d7d7;
+    margin-right: 5px;
+    display: inline-flex;
+  }
+  .box {
+    display: inline-block;
+    border: 1px solid #d7d7d7;
+    width: 150px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    margin-right: 15px;
+    i {
+      vertical-align: middle;
+    }
+  }
+  /* Content */
+  #section1, #section2, #section3, #section4, #section5 {
+    min-height: 400px;
+    padding-left: 75px;
+    padding-top: 50px;
+    box-shadow: 0 -2px 2px #d7d7d7;
+  }
+}

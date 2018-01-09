@@ -13,9 +13,14 @@
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.2.0",
     "gulp-header": "^1.8.9",
     "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^6.0.16",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "gulp-stylelint": "^6.0.0",
+    "font-awesome": "4.7.0",
+    "stylelint": "8.4.0"
   }
 }
