@@ -2427,8 +2427,6 @@ body {
   /* Content */ }
   .launcher input[type='radio']:checked + .card-pf {
     border-color: #0088ce; }
-  .launcher .card-pf {
-    min-height: 600px; }
   .launcher .list-view-pf-description {
     width: 100%; }
   .launcher .continue {
@@ -2442,6 +2440,13 @@ body {
       border-left: 1px solid #d7d7d7; }
   .launcher .card-pf-body--body {
     height: 300px; }
+  .launcher .card-pf-footer--logo {
+    background-color: #030303;
+    margin-left: -20px;
+    margin-right: -20px; }
+    .launcher .card-pf-footer--logo img {
+      display: block;
+      margin: auto; }
   .launcher .card-pf-body-description {
     background-color: #f7f7f7;
     position: absolute;
@@ -2462,6 +2467,7 @@ body {
       background-color: #292e34; }
       .launcher-container_nav .vertical-bar {
         display: grid;
+        grid-template-rows: 15% auto auto auto auto auto 15%;
         align-content: space-between;
         background-color: #72767b;
         width: 25px;
