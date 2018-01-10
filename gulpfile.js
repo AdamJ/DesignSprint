@@ -5,6 +5,8 @@ var header = require('gulp-header');
 var rename = require("gulp-rename");
 var notify = require('gulp-notify');
 var pkg = require('./package.json');
+var cssmin = require('gulp-cssmin');
+var postcss = require('gulp-postcss');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -14,7 +16,19 @@ var banner = ['/*!\n',
   ''
 ].join('');
 
-gulp.task('sass', function () {
+gulp.task('lint-sass', function lintCssTask() {
+  const gulpStylelint = require('gulp-stylelint');
+
+  return gulp
+    .src('sass/*.scss')
+    .pipe(gulpStylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }));
+});
+
+gulp.task('sass', ['lint-sass'], function () {
   return gulp.src("sass/*.scss")
     .pipe(sass().on('error', sass.logError))
     .pipe(header(banner, {
