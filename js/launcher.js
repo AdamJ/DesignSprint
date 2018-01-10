@@ -3,27 +3,27 @@
 // This is an experimental feature: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
 
 // scroll into view
-document.querySelector('.section-1').addEventListener('click', function(e) {
+document.querySelector('.mission-runtime').addEventListener('click', function(e) {
   e.preventDefault();
-  document.querySelector('#section1').scrollIntoView({ behavior: 'smooth' });
+  document.querySelector('#MissionRuntime').scrollIntoView({ behavior: 'smooth' });
 });
 // scroll into view
-document.querySelector('.section-2').addEventListener('click', function(e) {
+document.querySelector('.target-environent').addEventListener('click', function(e) {
   e.preventDefault();
-  document.querySelector('#section2').scrollIntoView({ behavior: 'smooth' });
+  document.querySelector('#TargetEnvironment').scrollIntoView({ behavior: 'smooth' });
 });
 // scroll into view
-document.querySelector('.section-3').addEventListener('click', function(e) {
+document.querySelector('.release-strategy').addEventListener('click', function(e) {
   e.preventDefault();
-  document.querySelector('#section3').scrollIntoView({ behavior: 'smooth' });
+  document.querySelector('#ReleaseStrategy').scrollIntoView({ behavior: 'smooth' });
 });
 // scroll into view
-document.querySelector('.section-4').addEventListener('click', function(e) {
+document.querySelector('.git-provider').addEventListener('click', function(e) {
   e.preventDefault();
-  document.querySelector('#section4').scrollIntoView({ behavior: 'smooth' });
+  document.querySelector('#GitProvider').scrollIntoView({ behavior: 'smooth' });
 });
 // scroll into view
-document.querySelector('.section-5').addEventListener('click', function(e) {
+document.querySelector('.project-summary').addEventListener('click', function(e) {
   e.preventDefault();
-  document.querySelector('#section5').scrollIntoView({ behavior: 'smooth' });
+  document.querySelector('#ProjectSummary').scrollIntoView({ behavior: 'smooth' });
 });
