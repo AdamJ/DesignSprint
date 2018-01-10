@@ -6,9 +6,9 @@ body {
   input[type='radio']:checked + .card-pf {
     border-color: #0088ce;
   }
-  .card-pf {
-    min-height: 600px;
-  }
+  // .card-pf {
+  //   min-height: 600px;
+  // }
   .list-view-pf-description {
     width: 100%;
   }
@@ -26,6 +26,15 @@ body {
   }
   .card-pf-body--body {
     height: 300px;
+  }
+  .card-pf-footer--logo {
+    background-color: #030303;
+    margin-left: -20px;
+    margin-right: -20px;
+    img {
+      display: block;
+      margin: auto;
+    }
   }
   .card-pf-body-description {
     background-color: #f7f7f7;
@@ -49,7 +58,7 @@ body {
       background-color: #292e34;
       .vertical-bar {
         display: grid;
-        // align-content: space-evenly;
+        grid-template-rows: 15% auto auto auto auto auto 15%;
         align-content: space-between;
         background-color: #72767b;
         width: 25px;
