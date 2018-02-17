@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://mindreeper2420.github.com/DesignSprint.git"
+    "url": "https://design.adamjolicoeur.com"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
